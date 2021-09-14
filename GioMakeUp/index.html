@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GioMakeUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <script>
+        $("figure").mouseleave(
+            function() {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+    <nav id="navbar">
+        <img class="logo" src="/Portfolio/logo.png" alt="">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="">About Me</a></li>
+        </ul>
+    </nav> <br> <br> <br> <br> <br>
+    <div class="flex">
+        <figure class="icon "><img src="/Portfolio/beautyVer.jpg">
+            <figcaption>
+                <h2> <span>Beauty</span></h2>
+            </figcaption>
+        </figure>
+        <figure class="icon "><img src="Portfolio/TesiVer.jpg">
+            <figcaption>
+                <h2><span>Le Ali</span> </h2>
+                <h2> <span>Sotto Ai Piedi</span></h2>
+            </figcaption>
+        </figure>
+        <figure class="icon "><img src="Portfolio/TheatreVer.jpg">
+            <figcaption>
+                <h2><span>Theatre</span></h2>
+            </figcaption>
+        </figure>
+        <div class="mobile">
+            <img class="foto" src="/Portfolio/BeautyMob.png" alt="">
+            <img class="foto" src="/Portfolio/TesiMob.png" alt="">
+            <img class="foto" src="/Portfolio/TheatreMob.png" alt="">
+
+        </div>
+    </div>
+    <div class="dropdown">
+        <input type="checkbox" id="checkbox_toggle">
+        <label for="checkbox_toggle" class="hamburger">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+         </label>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+</body>
+
+</html>

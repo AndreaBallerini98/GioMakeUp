@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+body {
+    height: 100vh;
+}
+
+nav {
+    background-image: linear-gradient(45deg, #f5b793, #fff2eb);
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    z-index: 2;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 90%;
+    float: left;
+    margin-left: 2%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 18%;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    color: #40312c;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 400;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 8px 25px;
+    text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #fff2eb;
+    color: #b93b11;
+    border-radius: 80%;
+    transition: 0.5s;
+}
+
+.mobile {
+    display: none;
+}
+
+.foto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 30px;
+}
+
+.halloween {
+    display: block;
+    float: left;
+    width: 35%;
+    margin-left: 12%;
+}
+
+.halloween:hover {
+    translate: -31%;
+    transform: scale(.8);
+    transition: 1s;
+}
+
+.bla {
+    visibility: hidden;
+}
+
+.halloween:hover h1 {
+    visibility: visible;
+    transition: 2s;
+}
+
+@media only screen and (max-width: 1000px) {
+    figure.icon {
+        display: none;
+    }
+    ul {
+        display: none;
+    }
+    .logo {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dropdown {
+        display: block;
+        position: fixed;
+        top: 3%;
+        right: 3%;
+        z-index: 3;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+.icon {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    margin: 0px 40px 0px 40px;
+    max-width: 23%;
+    overflow: hidden;
+    text-align: center;
+    background: black;
+    box-shadow: 0 0 5px black;
+}
+
+.icon * {
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.icon img {
+    opacity: 0.25;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.icon figcaption {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    -webkit-transform: rotate(0deg) translateY(-50%) scale(1);
+    transform: rotate(0deg) translateY(-50%) scale(1);
+    -webkit-transform-origin: center 0;
+    transform-origin: center 0;
+}
+
+.icon figcaption h2 {
+    top: 50%;
+    color: #f5b793;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.icon figcaption h2 span {
+    width: 50%;
+    font-weight: 500;
+    font-size: 200%;
+    font-family: 'Sacramento', cursive;
+}
+
+.icon figcaption:before,
+.icon figcaption:after {
+    background-color: #f5b793;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    content: "";
+    display: block;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.icon figcaption:before {
+    left: 0;
+    top: 0;
+}
+
+.icon figcaption:after {
+    bottom: 0;
+    right: 0;
+}
+
+.icon a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.icon:hover img,
+.icon.hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.icon:hover h2 {
+    color: #733d1c;
+    font-size: 220%;
+}
+
+.icon:hover figcaption,
+.icon.hover figcaption {
+    -webkit-transform: rotate(-45deg) translateY(-50%) scale(0.9);
+    transform: rotate(-45deg) translateY(-50%) scale(0.9);
+}
+
+.icon:hover figcaption:before,
+.icon.hover figcaption:before,
+.icon:hover figcaption:after,
+.icon.hover figcaption:after {
+    width: 200%;
+}
+
+a {
+    color: #fff;
+}
